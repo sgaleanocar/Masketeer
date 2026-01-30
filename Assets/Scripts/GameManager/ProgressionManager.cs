@@ -23,6 +23,7 @@ public class ProgressionManager : MonoBehaviour
         else if (type == TriggerType.right && num_keys == 3)
         {
             DisableItems(2);
+            GetComponent<EnemySpawner>().StartFinalLayerBehavior();
         }
     }
 
