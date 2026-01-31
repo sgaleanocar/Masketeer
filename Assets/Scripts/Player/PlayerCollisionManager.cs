@@ -19,22 +19,14 @@ public class PlayerCollisionManager : MonoBehaviour
 
     }
 
-    void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Edge"))
-        {
-            collision.GetComponent<EdgeManager>().HandlePlayerCollision(
-                num_keys: num_keys
-            );
-        }
-    }
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Key"))
         {
             num_keys++;
-            Destroy(other.gameObject);
+            Debug.Log("Keys collected: " + num_keys);
+            other.gameObject.GetComponent<KeyManager>().HandlePlayerCollision(num_keys);
         }
         
     }

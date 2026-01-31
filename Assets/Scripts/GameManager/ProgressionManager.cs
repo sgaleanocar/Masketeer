@@ -10,17 +10,17 @@ public class ProgressionManager : MonoBehaviour
 
     }
 
-    public void CheckLevelProgression(int num_keys, TriggerType type)
+    public void CheckLevelProgression(int num_keys)
     {
-        if (type == TriggerType.right && num_keys == 1)
+        if (num_keys == 1)
         {
             DisableItems(0);
         }
-        else if (type == TriggerType.left && num_keys == 2)
+        else if (num_keys == 2)
         {
             DisableItems(1);
         }
-        else if (type == TriggerType.right && num_keys == 3)
+        else if (num_keys == 3)
         {
             DisableItems(2);
             GetComponent<EnemySpawner>().StartFinalLayerBehavior();
