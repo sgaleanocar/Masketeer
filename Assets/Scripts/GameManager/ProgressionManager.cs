@@ -39,13 +39,12 @@ public class ProgressionManager : MonoBehaviour
     public IEnumerator EndScene(bool victory)
     {
         
-        Debug.Log("About to die");
         yield return new WaitForSeconds(1f);
         Destroy(gameObject);
         if (!victory)
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
         else
-            SceneManager.LoadScene("VictoryScene");
+            SceneManager.LoadScene(3, LoadSceneMode.Single);
     }
  
 }

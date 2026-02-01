@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CanvasPlay.unity
     guid: 267f52e24849c48459886da932f12ee4
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 2c3222cc6205b40ed93591604d121a5f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
