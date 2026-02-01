@@ -1,0 +1,26 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
+public class LoadScene : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    
+    public void OnJump(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
+        }
+    }
+}
