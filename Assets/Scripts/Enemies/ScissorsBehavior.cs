@@ -56,6 +56,7 @@ public class ScissorsBehavior : MonoBehaviour
         if (Time.time - lastCheck < 2f)
             return;
 
+        Debug.Log("Checking ground ahead");
         lastCheck = Time.time;
         bool hasGroundAhead = Physics2D.Raycast(
             frontGroundDetector.position,
@@ -66,11 +67,13 @@ public class ScissorsBehavior : MonoBehaviour
 
         if (!hasGroundAhead)
             TurnAround();
+        else
+            Debug.Log("Ground ahead detected");
     }
 
     void TurnAround()
     {
-        transform.localScale *= -1;
+        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         dir *= -1;
     }
 

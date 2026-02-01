@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealthManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerHealthManager : MonoBehaviour
     private float health;
     private int playerLayer;
     private int enemiesLayer;
+    [SerializeField] GameObject gameManager;
 
     [SerializeField] private SpriteRenderer spriteRenderer;
 
@@ -37,6 +39,13 @@ public class PlayerHealthManager : MonoBehaviour
         Debug.Log(healthBar.fillAmount);
         StartCoroutine(CheckInvencibility());
         StartCoroutine(Blink(1f));
+        if (health <= 0f)
+        {
+            Debug.Log("Player dead");
+            // Handle player death here
+            Physics2D.IgnoreLayerCollision(playerLayer, enemiesLayer, false);
+            gameManager.GetComponent<ProgressionManager>().EndScene(false); 
+        }
     }
 
     IEnumerator CheckInvencibility()

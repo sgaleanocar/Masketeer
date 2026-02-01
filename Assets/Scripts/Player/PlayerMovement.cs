@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEditor.EditorTools;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,6 +19,8 @@ public class PlayerMovement2D : MonoBehaviour
     [SerializeField] private Transform spriteTransform;
     float prevLocalX;
     PlayerToolManager toolManager;
+    private float currentYpos;
+    private float lastYpos;
 
     private void Awake()
     {
@@ -25,6 +28,9 @@ public class PlayerMovement2D : MonoBehaviour
         rb.freezeRotation = true;
         prevLocalX = spriteTransform.localScale.x;
         toolManager = GetComponent<PlayerToolManager>();
+        currentYpos = transform.position.y;
+        lastYpos = transform.position.y;
+        isGrounded = false;
     }
 
     // --- New Input System ---
@@ -47,12 +53,36 @@ public class PlayerMovement2D : MonoBehaviour
         
     }
 
+    void Update()
+    {
+        // Update animator jumping state
+        lastYpos = currentYpos;
+        currentYpos = transform.position.y;
+        if (!isGrounded)
+        {
+            if (currentYpos <= lastYpos)
+            {
+                animator.SetBool("isJumping", false);
+                animator.SetBool("isFalling", true);
+            }
+        }
+        else
+        {
+            if (animator.GetBool("isFalling"))
+            {
+                animator.SetBool("isLanding", true);
+            }
+            animator.SetBool("isFalling", false);
+        }
+    }
+
     public void OnJump(InputValue value)
     {
         if (value.isPressed && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            animator.SetBool("isJumping", true);
         }
         if (toolManager.hasTool)
         {
@@ -67,6 +97,12 @@ public class PlayerMovement2D : MonoBehaviour
 
     // --- Ground check with TAG ---
     private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Ground"))
+            isGrounded = true;
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Ground"))
             isGrounded = true;

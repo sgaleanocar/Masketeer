@@ -25,15 +25,15 @@ public class EraserBehavior : MonoBehaviour
         elevationPoint = GameObject.Find("AscendPoint");
     }
 
-    public void StartEraserBehavior(Transform playerTransform)
+    public void StartEraserBehavior(Transform playerTransform, GameObject gameManager)
     {
         this.playerTransform = playerTransform;
-        StartCoroutine(StartAttackCycle());
+        StartCoroutine(StartAttackCycle(gameManager));
     }
-    IEnumerator StartAttackCycle()
+    IEnumerator StartAttackCycle(GameObject gameManager)
     {
 
-        while (true)
+        while (gameManager != null)
         {
             if (!busy)
             {

@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: f32516838a78e47ef8423ede7483923b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1698375330686726234
+    second: assets-3_0000s_0006_gota-4_0
+  - first:
+      213: -913366420211316341
+    second: assets-3_0000s_0006_gota-4_1
+  - first:
+      213: -1957402334015627301
+    second: assets-3_0000s_0006_gota-4_2
+  - first:
+      213: -1324290375913546535
+    second: assets-3_0000s_0006_gota-4_3
+  - first:
+      213: -6104580861732091113
+    second: assets-3_0000s_0006_gota-4_4
+  - first:
+      213: -7426590167986856700
+    second: assets-3_0000s_0006_gota-4_5
+  - first:
+      213: 2366540684126875409
+    second: assets-3_0000s_0006_gota-4_6
+  - first:
+      213: 7858799995231530972
+    second: assets-3_0000s_0006_gota-4_7
+  - first:
+      213: 1492044378642846108
+    second: assets-3_0000s_0006_gota-4_8
+  - first:
+      213: 1093841918525650059
+    second: assets-3_0000s_0006_gota-4_9
+  - first:
+      213: 5439199716915748361
+    second: assets-3_0000s_0006_gota-4_10
+  - first:
+      213: -3614241788625469254
+    second: assets-3_0000s_0006_gota-4_11
+  - first:
+      213: -4878073548264837557
+    second: assets-3_0000s_0006_gota-4_12
+  - first:
+      213: 3353535261087510749
+    second: assets-3_0000s_0006_gota-4_13
+  - first:
+      213: -9133114980625452398
+    second: assets-3_0000s_0006_gota-4_14
+  - first:
+      213: -1808656743581569622
+    second: assets-3_0000s_0006_gota-4_15
+  - first:
+      213: 9114163032674591727
+    second: assets-3_0000s_0006_gota-4_16
+  - first:
+      213: -4275073713220425152
+    second: assets-3_0000s_0006_gota-4_17
+  - first:
+      213: 6246324305554462991
+    second: assets-3_0000s_0006_gota-4_18
+  - first:
+      213: -29902447064119453
+    second: assets-3_0000s_0006_gota-4_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_0
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 547
+        width: 41
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af812792a82e68e0800000000000000
+      internalID: -1698375330686726234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 540
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89c88d74121353f0800000000000000
+      internalID: -913366420211316341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 415
+        width: 171
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf5a7ea2f8e5d4e0800000000000000
+      internalID: -1957402334015627301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_3
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 461
+        width: 158
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc54346bec2f9de0800000000000000
+      internalID: -1324290375913546535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_4
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 567
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b8fc9bc0c284ba0800000000000000
+      internalID: -6104580861732091113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_5
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 493
+        width: 68
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d1cb807937fe890800000000000000
+      internalID: -7426590167986856700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 594
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f64e7b634a7d020800000000000000
+      internalID: 2366540684126875409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_7
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 564
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfed9c35f0101d60800000000000000
+      internalID: 7858799995231530972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 421
+        width: 56
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91102a057ec4b410800000000000000
+      internalID: 1492044378642846108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 495
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b843722fd6b1e2f00800000000000000
+      internalID: 1093841918525650059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_10
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 425
+        width: 44
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e1b2d035beb7b40800000000000000
+      internalID: 5439199716915748361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 461
+        width: 89
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab04b980e32a7ddc0800000000000000
+      internalID: -3614241788625469254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 30
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ee177f3f99d4cb0800000000000000
+      internalID: -4878073548264837557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_13
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 471
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd03eda5d862a8e20800000000000000
+      internalID: 3353535261087510749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_14
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 476
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292750f7058a04180800000000000000
+      internalID: -9133114980625452398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_15
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 460
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aada43e364c56e6e0800000000000000
+      internalID: -1808656743581569622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_16
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 466
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3e0934df20c7e70800000000000000
+      internalID: 9114163032674591727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_17
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 422
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ae2eeab13eba4c0800000000000000
+      internalID: -4275073713220425152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_18
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 291
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0956788cd66fa650800000000000000
+      internalID: 6246324305554462991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0006_gota-4_19
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 179
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36704d002e3c59ff0800000000000000
+      internalID: -29902447064119453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      assets-3_0000s_0006_gota-4_0: -1698375330686726234
+      assets-3_0000s_0006_gota-4_1: -913366420211316341
+      assets-3_0000s_0006_gota-4_10: 5439199716915748361
+      assets-3_0000s_0006_gota-4_11: -3614241788625469254
+      assets-3_0000s_0006_gota-4_12: -4878073548264837557
+      assets-3_0000s_0006_gota-4_13: 3353535261087510749
+      assets-3_0000s_0006_gota-4_14: -9133114980625452398
+      assets-3_0000s_0006_gota-4_15: -1808656743581569622
+      assets-3_0000s_0006_gota-4_16: 9114163032674591727
+      assets-3_0000s_0006_gota-4_17: -4275073713220425152
+      assets-3_0000s_0006_gota-4_18: 6246324305554462991
+      assets-3_0000s_0006_gota-4_19: -29902447064119453
+      assets-3_0000s_0006_gota-4_2: -1957402334015627301
+      assets-3_0000s_0006_gota-4_3: -1324290375913546535
+      assets-3_0000s_0006_gota-4_4: -6104580861732091113
+      assets-3_0000s_0006_gota-4_5: -7426590167986856700
+      assets-3_0000s_0006_gota-4_6: 2366540684126875409
+      assets-3_0000s_0006_gota-4_7: 7858799995231530972
+      assets-3_0000s_0006_gota-4_8: 1492044378642846108
+      assets-3_0000s_0006_gota-4_9: 1093841918525650059
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

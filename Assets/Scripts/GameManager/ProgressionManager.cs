@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Unity.VectorGraphics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ProgressionManager : MonoBehaviour
 {
@@ -32,4 +34,14 @@ public class ProgressionManager : MonoBehaviour
         layers[index].gameObject.SetActive(false);
         prefabs[index].gameObject.SetActive(false);
     }
+
+    public void EndScene(bool victory)
+    {
+        Destroy(gameObject);
+        if (!victory)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        else
+            SceneManager.LoadScene("VictoryScene");
+
+    }   
 }

@@ -80,7 +80,7 @@ public class EnemySpawner : MonoBehaviour
                 var stop_position = player.position;
                 yield return new WaitForSeconds(0.5f);
                 var eraser = Instantiate(finalBossPrefab, stop_position, Quaternion.identity);
-                eraser.GetComponent<EraserBehavior>().StartEraserBehavior(playerSprite);
+                eraser.GetComponent<EraserBehavior>().StartEraserBehavior(playerSprite, gameObject);
 
                 break;
             }
