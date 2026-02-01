@@ -8,7 +8,6 @@ public class PlayerHealthManager : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [SerializeField] Slider slider;
     [SerializeField] Image healthBar;
     private int num_keys;
     private float health;
@@ -17,6 +16,9 @@ public class PlayerHealthManager : MonoBehaviour
     [SerializeField] GameObject gameManager;
 
     [SerializeField] private SpriteRenderer spriteRenderer;
+
+    [SerializeField] private Animator animator;
+    [SerializeField] private bool playerDeath = false;
 
     void Start()
     {
@@ -32,21 +34,32 @@ public class PlayerHealthManager : MonoBehaviour
     }
 
     public void TakeDamage(int amount)
+{
+    if (playerDeath) return;
+
+    health -= amount;
+    healthBar.fillAmount = Mathf.Clamp01(health / 10f);
+
+    StartCoroutine(CheckInvencibility());
+    StartCoroutine(Blink(1f));
+
+    if (health <= 0f)
     {
-        health -= amount;
-        healthBar.fillAmount -= amount / 10f;
-        slider.value -= amount / 10f;
-        Debug.Log(healthBar.fillAmount);
-        StartCoroutine(CheckInvencibility());
-        StartCoroutine(Blink(1f));
-        if (health <= 0f)
-        {
-            Debug.Log("Player dead");
-            // Handle player death here
-            Physics2D.IgnoreLayerCollision(playerLayer, enemiesLayer, false);
-            gameManager.GetComponent<ProgressionManager>().EndScene(false); 
-        }
+        playerDeath = true;
+        Debug.Log("Player dead");
+
+        // Asegurar que el sprite quede visible (por si Blink lo apagó)
+        spriteRenderer.enabled = true;
+
+        animator.SetTrigger("Dies");
+
+        // Restaurar colisiones (por si estaban ignoradas)
+        Physics2D.IgnoreLayerCollision(playerLayer, enemiesLayer, false);
+
+        var progresionManager = gameManager.GetComponent<ProgressionManager>();
+        StartCoroutine(progresionManager.EndScene(false));
     }
+}
 
     IEnumerator CheckInvencibility()
     {
@@ -60,11 +73,13 @@ public class PlayerHealthManager : MonoBehaviour
     IEnumerator Blink(float t)
     {
         float end = Time.time + t;
-        while (Time.time < end)
+
+        while (Time.time < end && !playerDeath)
         {
             spriteRenderer.enabled = !spriteRenderer.enabled;
             yield return new WaitForSeconds(0.08f);
         }
+
         spriteRenderer.enabled = true;
     }
 }

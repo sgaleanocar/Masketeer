@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VectorGraphics;
 using UnityEngine;
@@ -35,13 +36,16 @@ public class ProgressionManager : MonoBehaviour
         prefabs[index].gameObject.SetActive(false);
     }
 
-    public void EndScene(bool victory)
+    public IEnumerator EndScene(bool victory)
     {
+        
+        Debug.Log("About to die");
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
         if (!victory)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         else
             SceneManager.LoadScene("VictoryScene");
-
-    }   
+    }
+ 
 }

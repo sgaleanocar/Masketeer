@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 1abd2f51b10084a739cfe7674ee017a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6949702052258575582
+    second: assets-3_0000s_0001_muerte-2-copia_0
+  - first:
+      213: 8207871222163355373
+    second: assets-3_0000s_0001_muerte-2-copia_1
+  - first:
+      213: -1486063080504352173
+    second: assets-3_0000s_0001_muerte-2-copia_2
+  - first:
+      213: 2417840290080464548
+    second: assets-3_0000s_0001_muerte-2-copia_3
+  - first:
+      213: 3788398856298734333
+    second: assets-3_0000s_0001_muerte-2-copia_4
+  - first:
+      213: 3163387462864856471
+    second: assets-3_0000s_0001_muerte-2-copia_5
+  - first:
+      213: -6930426407276221921
+    second: assets-3_0000s_0001_muerte-2-copia_6
+  - first:
+      213: -7839261064366789518
+    second: assets-3_0000s_0001_muerte-2-copia_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_0
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 201
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4fca7023d427060800000000000000
+      internalID: 6949702052258575582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_1
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 218
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6b23fa36738e170800000000000000
+      internalID: 8207871222163355373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_2
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 199
+        width: 260
+        height: 734
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35227b47081706be0800000000000000
+      internalID: -1486063080504352173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 160
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae9fddfee4ed8120800000000000000
+      internalID: 2417840290080464548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_4
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 171
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2ae2120b8139430800000000000000
+      internalID: 3788398856298734333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_5
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 169
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795ebfa132c96eb20800000000000000
+      internalID: 3163387462864856471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_6
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 171
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a605cc6ed22df90800000000000000
+      internalID: -6930426407276221921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assets-3_0000s_0001_muerte-2-copia_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 83
+        width: 287
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ceddc9899553390800000000000000
+      internalID: -7839261064366789518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      assets-3_0000s_0001_muerte-2-copia_0: 6949702052258575582
+      assets-3_0000s_0001_muerte-2-copia_1: 8207871222163355373
+      assets-3_0000s_0001_muerte-2-copia_2: -1486063080504352173
+      assets-3_0000s_0001_muerte-2-copia_3: 2417840290080464548
+      assets-3_0000s_0001_muerte-2-copia_4: 3788398856298734333
+      assets-3_0000s_0001_muerte-2-copia_5: 3163387462864856471
+      assets-3_0000s_0001_muerte-2-copia_6: -6930426407276221921
+      assets-3_0000s_0001_muerte-2-copia_7: -7839261064366789518
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

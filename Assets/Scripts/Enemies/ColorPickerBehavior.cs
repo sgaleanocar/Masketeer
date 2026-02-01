@@ -57,7 +57,7 @@ public class ColorPickerBehavior : MonoBehaviour
         while (true)
         {
 
-            var num = Random.Range(1, 3);
+            var num = Random.Range(0, 1.5f);
             yield return new WaitForSeconds(num);
             DropHandler();
             if (isEmpty)
