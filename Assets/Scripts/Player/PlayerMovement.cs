@@ -1,3 +1,5 @@
+using UnityEditor;
+using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,12 +17,14 @@ public class PlayerMovement2D : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private Transform spriteTransform;
     float prevLocalX;
+    PlayerToolManager toolManager;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
         prevLocalX = spriteTransform.localScale.x;
+        toolManager = GetComponent<PlayerToolManager>();
     }
 
     // --- New Input System ---
@@ -49,6 +53,10 @@ public class PlayerMovement2D : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+        if (toolManager.hasTool)
+        {
+            toolManager.UseTool();
         }
     }
 

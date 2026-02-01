@@ -8,6 +8,7 @@ TagManager:
   - Edge
   - Key
   - Enemies
+  - Tool
   layers:
   - Default
   - TransparentFX

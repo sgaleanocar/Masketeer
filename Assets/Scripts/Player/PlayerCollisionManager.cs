@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Splines.ExtrusionShapes;
 
 public class PlayerCollisionManager : MonoBehaviour
 {
@@ -27,6 +28,12 @@ public class PlayerCollisionManager : MonoBehaviour
             num_keys++;
             Debug.Log("Keys collected: " + num_keys);
             other.gameObject.GetComponent<KeyManager>().HandlePlayerCollision(num_keys);
+        }
+        if (other.gameObject.CompareTag("Tool"))
+        {
+            gameObject.GetComponent<PlayerToolManager>().ActivateTool();
+            Debug.Log("Tool collected");
+            Destroy(other.gameObject);
         }
         
     }

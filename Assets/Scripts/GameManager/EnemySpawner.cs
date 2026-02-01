@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private List<GameObject> prefabs; // iconos UI
     [SerializeField] private RectTransform cursor;        // cursor UI
     [SerializeField] private Transform player;
+    [SerializeField] private Transform playerSprite;
 
     // player mundo
     [SerializeField] private float spawnCooldown = 2f;
@@ -77,7 +79,9 @@ public class EnemySpawner : MonoBehaviour
             {
                 var stop_position = player.position;
                 yield return new WaitForSeconds(0.5f);
-                Instantiate(finalBossPrefab, stop_position, Quaternion.identity);
+                var eraser = Instantiate(finalBossPrefab, stop_position, Quaternion.identity);
+                eraser.GetComponent<EraserBehavior>().StartEraserBehavior(playerSprite);
+
                 break;
             }
 
@@ -85,7 +89,6 @@ public class EnemySpawner : MonoBehaviour
             yield return null;
         }
         busy = false;
-        StartCoroutine(EnemySpawnerLoop());
     }
     public void StartFinalLayerBehavior()
     {

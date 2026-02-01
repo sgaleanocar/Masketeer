@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EraserBehavior : MonoBehaviour
@@ -9,9 +8,13 @@ public class EraserBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private float defaultSpeed = 5f;
     [SerializeField] private float groundDistance = 5f;
-    [SerializeField] private float attackMultiplier = 1.5f;
-    [SerializeField] private int amountDamage = 10;
+    [SerializeField] private int amountDamage = 3;
+    [SerializeField] private float playerAttackSpeed = 7f;
+    [SerializeField] private float waitForAttack = 1f;
+
+    [SerializeField] private float erraserDistance = 0.5f;
     private bool busy = false;
+    private Transform playerTransform;
 
     Rigidbody2D rb;
     private GameObject elevationPoint;
@@ -20,19 +23,25 @@ public class EraserBehavior : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         elevationPoint = GameObject.Find("AscendPoint");
+    }
+
+    public void StartEraserBehavior(Transform playerTransform)
+    {
+        this.playerTransform = playerTransform;
         StartCoroutine(StartAttackCycle());
     }
     IEnumerator StartAttackCycle()
     {
 
-        while (true) {
+        while (true)
+        {
             if (!busy)
             {
                 busy = true;
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(0.5f);
                 StartCoroutine(AttackCycle());
             }
-    
+            yield return null;
         }
     }
 
@@ -45,15 +54,40 @@ public class EraserBehavior : MonoBehaviour
             elevationPoint.transform.position.y,
             transform.position.z
         );
+        rb.simulated = false;
         while (transform.position.y < endPosition.y)
         {
             transform.position = Vector3.MoveTowards(transform.position, endPosition, defaultSpeed * Time.deltaTime);
             yield return null;
         }
-        yield return new WaitForSeconds(2f);
+        var playerPos = playerTransform.position;
+        yield return new WaitForSeconds(waitForAttack);
         // Attack
-        yield return new WaitForSeconds(2f);
+        while (Vector3.Distance(transform.position, playerPos) > erraserDistance)
+        {
+
+            transform.position = Vector3.MoveTowards(
+                transform.position, playerPos,
+                playerAttackSpeed * Time.deltaTime
+            );
+            yield return null;
+        }
+        rb.simulated = true;
+        yield return new WaitForSeconds(3f);
         busy = false;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Handle collision with player
+            var playerHealth = collision.gameObject.GetComponent<PlayerHealthManager>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(amountDamage);
+            }
+        }
     }
 
 
