@@ -6,7 +6,9 @@ public class KeyManager : MonoBehaviour
 {
     [SerializeField] GameObject gameManager;
     [SerializeField] GameObject layerIcon;     // <-- cambia a RectTransform
-    [SerializeField] GameObject eyeObject;     // <-- cambia a RectTransform
+    [SerializeField] GameObject eyeObject;
+
+    [SerializeField] Sprite replacementSprite;     // <-- cambia a RectTransform
     [SerializeField] Canvas canvas;
                // <-- referencia al Canvas
 
@@ -59,7 +61,7 @@ public class KeyManager : MonoBehaviour
         eyeObject.GetComponent<RectTransform>().position = end;
         eyeObject.SetActive(false);
 
-        layerIcon.GetComponent<Image>().sprite = gameObject.GetComponent<SpriteRenderer>().sprite; 
+        layerIcon.GetComponent<Image>().sprite = replacementSprite;
         gameManager.GetComponent<ProgressionManager>().CheckLevelProgression(num_keys);
     
         Destroy(gameObject);
