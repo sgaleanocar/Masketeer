@@ -42,7 +42,7 @@ public class ProgressionManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Destroy(gameObject);
         if (!victory)
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         else
             SceneManager.LoadScene(3, LoadSceneMode.Single);
     }

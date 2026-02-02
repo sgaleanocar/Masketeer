@@ -8,19 +8,29 @@ public class LoadScene : MonoBehaviour
     [SerializeField] private int sceneIndex;
     void Start()
     {
+        Time.timeScale = 1f;
+        StartCoroutine(RebindInput());
+    }
 
+    System.Collections.IEnumerator RebindInput()
+    {
+        var playerInput = GetComponent<PlayerInput>();
+        playerInput.enabled = false;
+        yield return new WaitForEndOfFrame(); // Espera un frame
+        playerInput.enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Time.timeScale = 1f; 
     }
     
     public void OnJump(InputValue value)
     {
         if (value.isPressed)
         {
+            GetComponent<PlayerInput>().enabled = false; 
             Debug.Log("Loading scene " + sceneIndex);
             SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
         }
