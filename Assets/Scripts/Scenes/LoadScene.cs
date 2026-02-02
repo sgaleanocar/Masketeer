@@ -23,12 +23,7 @@ public class LoadScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Time.timeScale = 1f; 
-    }
-    
-    public void OnJump(InputValue value)
-    {
-        if (value.isPressed)
+        if (Keyboard.current != null && Keyboard.current.anyKey.isPressed)
         {
             GetComponent<PlayerInput>().enabled = false; 
             Debug.Log("Loading scene " + sceneIndex);

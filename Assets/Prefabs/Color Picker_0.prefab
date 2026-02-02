@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2677705056963708906, guid: a66539c21d07e44ae80cee5df5e05fbd, type: 3}
+  m_Sprite: {fileID: -4070606114955063131, guid: 1c8f9d1affd6a4787bc7d54072a8aab2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -253,7 +253,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.11, y: 4.65, z: 0}
-  m_LocalScale: {x: 1.6733923, y: 1.7054021, z: 1}
+  m_LocalScale: {x: -1.673392, y: 1.7054021, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7988355733573886010}
@@ -309,7 +309,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2677705056963708906, guid: a66539c21d07e44ae80cee5df5e05fbd, type: 3}
+  m_Sprite: {fileID: -4070606114955063131, guid: 1c8f9d1affd6a4787bc7d54072a8aab2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -337,9 +337,9 @@ MonoBehaviour:
   dropPoint: {fileID: 7960345083945125958}
   animator: {fileID: 8282816428743059068}
   spriteRenderer: {fileID: 795276060258987187}
-  HalfSprite: {fileID: 7655164864234162768, guid: a66539c21d07e44ae80cee5df5e05fbd, type: 3}
-  QuarterSprite: {fileID: -4225256516439141012, guid: a66539c21d07e44ae80cee5df5e05fbd, type: 3}
-  EmptySprite: {fileID: -8930518478307045721, guid: a66539c21d07e44ae80cee5df5e05fbd, type: 3}
+  HalfSprite: {fileID: -1355081225741192914, guid: 61fac299c0b634067b46673a806753e6, type: 3}
+  QuarterSprite: {fileID: 4065602435253666051, guid: 3da76ffefb1f145c7949d91fd1eb2435, type: 3}
+  EmptySprite: {fileID: -651433341164151226, guid: 2ecb6f9aa312a48bab957d084e8a9797, type: 3}
 --- !u!50 &4072411065838048549
 Rigidbody2D:
   serializedVersion: 5
