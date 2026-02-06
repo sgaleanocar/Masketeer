@@ -26,6 +26,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject playerToolPrefab;
     [SerializeField] private RectTransform playerToolIcon;
 
+    [SerializeField] private AudioSource clickAudioSource;
+
     private int enemies_counter = 0;
     private bool busy = false;
     private bool last_layer_start = false;
@@ -69,6 +71,7 @@ public class EnemySpawner : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(2);
+        clickAudioSource.Play();
         CreatePlayerTool();
         // 2) Ir hacia el jugador (convertir mundo -> pantalla) 
         while (true)
@@ -110,6 +113,7 @@ public class EnemySpawner : MonoBehaviour
             yield return null;
         }
         yield return new WaitForSeconds(2);
+        clickAudioSource.Play();
 
         // 2) Ir hacia el jugador (convertir mundo -> pantalla)
 

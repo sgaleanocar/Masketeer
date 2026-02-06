@@ -12,6 +12,8 @@ public class ScissorsBehavior : MonoBehaviour
     [SerializeField] private float attackMultiplier = 1.5f;
     [SerializeField] private int amountDamage = 2;
     [SerializeField] private Transform frontGroundDetector;
+    [SerializeField] private AudioSource attackAudioSource;
+    [SerializeField] private AudioSource stabAudioSource;
     private Animator animator;
 
     public LayerMask groundLayer;
@@ -82,6 +84,7 @@ public class ScissorsBehavior : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            attackAudioSource.Play();
             currentMultiplier = attackMultiplier;
             if (collision.transform.position.x > transform.position.x)
             {
@@ -96,6 +99,7 @@ public class ScissorsBehavior : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            attackAudioSource.Stop();
             currentMultiplier = 1f;
             animator.SetBool("isAttacking", false);
         }
@@ -110,7 +114,7 @@ public class ScissorsBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Quitar vida");
+            stabAudioSource.Play();
             other.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(amountDamage);
             animator.SetBool("damageMade", true);
         }

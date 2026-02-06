@@ -213,7 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EraserBehavior
   defaultSpeed: 4
   groundDistance: 5
-  amountDamage: 5
+  amountDamage: 3
   playerAttackSpeed: 30
   waitForAttack: 0.5
   erraserDistance: 0.1

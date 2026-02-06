@@ -8,6 +8,8 @@ public class ProgressionManager : MonoBehaviour
 {
     [SerializeField] List<GameObject> layers;
     [SerializeField] List<GameObject> prefabs;
+
+    [SerializeField] GameObject arrow;
     void Start()
     {
 
@@ -26,6 +28,7 @@ public class ProgressionManager : MonoBehaviour
         else if (num_keys == 3)
         {
             DisableItems(2);
+            arrow.SetActive(true);
             GetComponent<EnemySpawner>().StartFinalLayerBehavior();
         }
     }

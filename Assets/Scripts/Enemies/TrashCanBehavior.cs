@@ -8,6 +8,7 @@ public class TrashCanBehavior : MonoBehaviour
     [SerializeField] GameObject Player;
     Rigidbody2D rb;
     [SerializeField] int amountDamage = 10;
+    [SerializeField] AudioSource hitAudioSource;
     void Awake()
     {
         transform.position = new Vector2(Player.transform.position.x, transform.position.y);
@@ -26,6 +27,7 @@ public class TrashCanBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            hitAudioSource.Play();
             collision.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(amountDamage);
         }
     }

@@ -1,6 +1,3 @@
-using UnityEditor;
-using UnityEditor.EditorTools;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,6 +14,7 @@ public class PlayerMovement2D : MonoBehaviour
 
     [SerializeField] private Animator animator;
     [SerializeField] private Transform spriteTransform;
+    [SerializeField] private AudioSource jumpAudioSource;
     float prevLocalX;
     PlayerToolManager toolManager;
     private float currentYpos;
@@ -82,6 +80,7 @@ public class PlayerMovement2D : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpAudioSource.Play();
             animator.SetBool("isJumping", true);
         }
         if (toolManager.hasTool)

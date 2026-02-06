@@ -9,6 +9,8 @@ TagManager:
   - Key
   - Enemies
   - Tool
+  - Door
+  - Trash
   layers:
   - Default
   - TransparentFX

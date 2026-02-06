@@ -8,6 +8,8 @@ public class PlayerCollisionManager : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private int num_keys;
+    [SerializeField] GameObject gameManager;
+    [SerializeField] AudioSource DoorCreakAudioSource;
 
     void Start()
     {
@@ -18,6 +20,16 @@ public class PlayerCollisionManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Door"))
+        {
+            DoorCreakAudioSource.Play();
+            var progresionManager = gameManager.GetComponent<ProgressionManager>();
+            StartCoroutine(progresionManager.EndScene(true));
+        }
     }
 
 

@@ -6,6 +6,7 @@ public class DropBehavior : MonoBehaviour
 {
 
     [SerializeField] Animator animator;
+    [SerializeField] AudioSource splashAudioSource;
     Rigidbody2D rb;
     [SerializeField] int amountDamage = 1;
     void Awake()
@@ -21,7 +22,7 @@ public class DropBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Quitar vida");
+            splashAudioSource.Play();
             collision.gameObject.GetComponent<PlayerHealthManager>().TakeDamage(amountDamage);
         }
         rb.simulated = false;
